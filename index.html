@@ -1,0 +1,1096 @@
+
+
+<!DOCTYPE html>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-8">
+    <!-- Home Section -->
+    <section id="home" class="main-section">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold gradient-text mb-6 floating-element">Welcome to Alpha Academies</h2>
+            <p class="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                Experience world-class education through our innovative online learning platform. We're transforming traditional education with cutting-edge technology, personalized learning paths, and comprehensive progress tracking for grades 7, 8, and 9.
+            </p>
+        </div>
+
+        <!-- Elite Stats -->
+        <div class="grid md:grid-cols-4 gap-8 mb-16">
+            <div class="glass-effect rounded-xl elite-shadow p-8 text-center">
+                <div class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-3">3</div>
+                <div class="text-gray-700 font-semibold">Grade Levels</div>
+                <div class="text-sm text-gray-500 mt-1">Comprehensive Coverage</div>
+            </div>
+            <div class="glass-effect rounded-xl elite-shadow p-8 text-center">
+                <div class="text-4xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent mb-3">9</div>
+                <div class="text-gray-700 font-semibold">Learning Areas</div>
+                <div class="text-sm text-gray-500 mt-1">Expert Curriculum</div>
+            </div>
+            <div class="glass-effect rounded-xl elite-shadow p-8 text-center">
+                <div class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-3">24/7</div>
+                <div class="text-gray-700 font-semibold">Access</div>
+                <div class="text-sm text-gray-500 mt-1">Always Available</div>
+            </div>
+            <div class="glass-effect rounded-xl elite-shadow p-8 text-center">
+                <div class="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-3">∞</div>
+                <div class="text-gray-700 font-semibold">Resources</div>
+                <div class="text-sm text-gray-500 mt-1">Unlimited Library</div>
+            </div>
+        </div>
+
+        <!-- Grade Overview -->
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="grade-card glass-effect rounded-2xl elite-shadow p-8 cursor-pointer" onclick="showGrade(7)">
+                <div class="text-center mb-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-3xl">7</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Grade Seven</h3>
+                    <p class="text-gray-600 mb-6">Foundation level with comprehensive curriculum covering all essential learning areas and building strong academic fundamentals.</p>
+                </div>
+                <button class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all font-semibold">Enter Classroom</button>
+            </div>
+            <div class="grade-card glass-effect rounded-2xl elite-shadow p-8 cursor-pointer" onclick="showGrade(8)">
+                <div class="text-center mb-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-3xl">8</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Grade Eight</h3>
+                    <p class="text-gray-600 mb-6">Intermediate level building upon Grade 7 foundations with advanced concepts and enhanced critical thinking skills.</p>
+                </div>
+                <button class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-xl hover:from-green-700 hover:to-green-800 transition-all font-semibold">Enter Classroom</button>
+            </div>
+            <div class="grade-card glass-effect rounded-2xl elite-shadow p-8 cursor-pointer" onclick="showGrade(9)">
+                <div class="text-center mb-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-3xl">9</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Grade Nine</h3>
+                    <p class="text-gray-600 mb-6">Advanced level preparing students for higher education pathways with sophisticated analytical and problem-solving skills.</p>
+                </div>
+                <button class="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-xl hover:from-purple-700 hover:to-purple-800 transition-all font-semibold">Enter Classroom</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grades Section -->
+    <section id="grades" class="main-section hidden">
+        <h2 class="text-4xl font-bold gradient-text mb-12 text-center">Select Your Grade Level</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="glass-effect rounded-2xl elite-shadow p-10 text-center">
+                <div class="text-8xl font-bold bg-gradient-to-br from-blue-600 to-blue-800 bg-clip-text text-transparent mb-6">7</div>
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Grade Seven</h3>
+                <div class="mb-6">
+                    <div class="text-sm text-gray-600 mb-2">Progress Overview</div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full progress-bar" style="width: 65%"></div>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-1">65% Complete</div>
+                </div>
+                <button onclick="showGrade(7)" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all font-semibold text-lg">
+                    Access Grade 7
+                </button>
+            </div>
+            <div class="glass-effect rounded-2xl elite-shadow p-10 text-center">
+                <div class="text-8xl font-bold bg-gradient-to-br from-green-600 to-green-800 bg-clip-text text-transparent mb-6">8</div>
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Grade Eight</h3>
+                <div class="mb-6">
+                    <div class="text-sm text-gray-600 mb-2">Progress Overview</div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full progress-bar" style="width: 45%"></div>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-1">45% Complete</div>
+                </div>
+                <button onclick="showGrade(8)" class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-xl hover:from-green-700 hover:to-green-800 transition-all font-semibold text-lg">
+                    Access Grade 8
+                </button>
+            </div>
+            <div class="glass-effect rounded-2xl elite-shadow p-10 text-center">
+                <div class="text-8xl font-bold bg-gradient-to-br from-purple-600 to-purple-800 bg-clip-text text-transparent mb-6">9</div>
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Grade Nine</h3>
+                <div class="mb-6">
+                    <div class="text-sm text-gray-600 mb-2">Progress Overview</div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-3 rounded-full progress-bar" style="width: 30%"></div>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-1">30% Complete</div>
+                </div>
+                <button onclick="showGrade(9)" class="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-4 rounded-xl hover:from-purple-700 hover:to-purple-800 transition-all font-semibold text-lg">
+                    Access Grade 9
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade Classroom -->
+    <section id="classroom" class="main-section hidden">
+        <div class="flex items-center justify-between mb-10">
+            <div>
+                <h2 id="grade-title" class="text-4xl font-bold gradient-text">Grade 7 Classroom</h2>
+                <p class="text-gray-600 text-lg">Select a subject to access comprehensive learning materials</p>
+            </div>
+            <button onclick="showSection('home')" class="bg-gradient-to-r from-gray-500 to-gray-600 text-white px-6 py-3 rounded-xl hover:from-gray-600 hover:to-gray-700 transition-all font-semibold">
+                ← Back to Home
+            </button>
+        </div>
+
+        <!-- Subjects Grid -->
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('English')">
+                <div class="text-4xl mb-4">📚</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">English</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style="width: 75%"></div>
+                </div>
+                <p class="text-xs text-gray-500">75% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('Kiswahili')">
+                <div class="text-4xl mb-4">🗣️</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Kiswahili</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style="width: 60%"></div>
+                </div>
+                <p class="text-xs text-gray-500">60% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('Mathematics')">
+                <div class="text-4xl mb-4">🔢</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Mathematics</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+                <p class="text-xs text-gray-500">80% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('Integrated Science')">
+                <div class="text-4xl mb-4">🔬</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Integrated Science</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-red-500 to-red-600 h-2 rounded-full" style="width: 55%"></div>
+                </div>
+                <p class="text-xs text-gray-500">55% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('Agriculture & Nutrition')">
+                <div class="text-4xl mb-4">🌱</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Agriculture & Nutrition</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-yellow-500 to-yellow-600 h-2 rounded-full" style="width: 70%"></div>
+                </div>
+                <p class="text-xs text-gray-500">70% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('Pretechnical Studies')">
+                <div class="text-4xl mb-4">🔧</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Pretechnical Studies</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-2 rounded-full" style="width: 40%"></div>
+                </div>
+                <p class="text-xs text-gray-500">40% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('Social Studies')">
+                <div class="text-4xl mb-4">🌍</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Social Studies</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-teal-500 to-teal-600 h-2 rounded-full" style="width: 65%"></div>
+                </div>
+                <p class="text-xs text-gray-500">65% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('Creative Arts & Sports')">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Creative Arts & Sports</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-pink-500 to-pink-600 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+                <p class="text-xs text-gray-500">85% Complete</p>
+            </div>
+            <div class="subject-item glass-effect rounded-xl elite-shadow p-6 cursor-pointer text-center" onclick="showSubject('CRE')">
+                <div class="text-4xl mb-4">✝️</div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">CRE</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full" style="width: 50%"></div>
+                </div>
+                <p class="text-xs text-gray-500">50% Complete</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subject Content -->
+    <section id="subject-content" class="main-section hidden">
+        <div class="flex items-center justify-between mb-10">
+            <div>
+                <h2 id="subject-title" class="text-4xl font-bold gradient-text">English - Grade 7</h2>
+                <p class="text-gray-600 text-lg">Comprehensive learning materials and progress tracking</p>
+            </div>
+            <button onclick="showCurrentGrade()" class="bg-gradient-to-r from-gray-500 to-gray-600 text-white px-6 py-3 rounded-xl hover:from-gray-600 hover:to-gray-700 transition-all font-semibold">
+                ← Back to Classroom
+            </button>
+        </div>
+
+        <!-- Content Tabs -->
+        <div class="glass-effect rounded-2xl elite-shadow overflow-hidden">
+            <div class="border-b border-gray-200 bg-gradient-to-r from-gray-50 to-white">
+                <nav class="flex space-x-8 px-8">
+                    <button onclick="showContentTab('contents')" class="tab-button py-6 px-4 border-b-3 border-transparent hover:border-blue-500 font-semibold text-gray-700 active transition-all">
+                        📄 Contents
+                    </button>
+                    <button onclick="showContentTab('clips')" class="tab-button py-6 px-4 border-b-3 border-transparent hover:border-blue-500 font-semibold text-gray-700 transition-all">
+                        🎥 Video Lessons
+                    </button>
+                    <button onclick="showContentTab('notes')" class="tab-button py-6 px-4 border-b-3 border-transparent hover:border-blue-500 font-semibold text-gray-700 transition-all">
+                        📝 Study Notes
+                    </button>
+                    <button onclick="showContentTab('questions')" class="tab-button py-6 px-4 border-b-3 border-transparent hover:border-blue-500 font-semibold text-gray-700 transition-all">
+                        ❓ Assessments
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Contents Tab -->
+            <div id="contents" class="content-section active p-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Course Contents</h3>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-lg text-gray-800">Chapter 1: Introduction to Literature</h4>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Understanding different forms of literature and their characteristics</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="border-l-4 border-green-500 bg-green-50 rounded-r-lg p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-lg text-gray-800">Chapter 2: Grammar Fundamentals</h4>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">In Progress</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Parts of speech, sentence structure, and basic grammar rules</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-lg text-gray-800">Chapter 3: Reading Comprehension</h4>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">Not Started</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Developing critical reading skills and text analysis</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="border-l-4 border-red-500 bg-red-50 rounded-r-lg p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-lg text-gray-800">Chapter 4: Creative Writing</h4>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">Not Started</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Essay writing, storytelling, and creative expression</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-red-500 to-red-600 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Clips Tab -->
+            <div id="clips" class="content-section p-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Video Lessons</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-effect rounded-xl p-6 elite-shadow">
+                        <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-40 rounded-lg mb-4 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <div class="text-4xl mb-2">▶️</div>
+                                <div class="text-sm">HD Quality</div>
+                            </div>
+                        </div>
+                        <h4 class="font-bold mb-2 text-gray-800">Introduction to Poetry</h4>
+                        <p class="text-sm text-gray-600 mb-3">Duration: 15 minutes • Expert Instructor</p>
+                        <button onclick="playVideo('poetry')" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-3 rounded-lg text-sm hover:from-blue-700 hover:to-blue-800 transition-all font-semibold">Watch Now</button>
+                    </div>
+                    <div class="glass-effect rounded-xl p-6 elite-shadow">
+                        <div class="bg-gradient-to-br from-green-400 to-green-600 h-40 rounded-lg mb-4 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <div class="text-4xl mb-2">▶️</div>
+                                <div class="text-sm">HD Quality</div>
+                            </div>
+                        </div>
+                        <h4 class="font-bold mb-2 text-gray-800">Grammar Basics</h4>
+                        <p class="text-sm text-gray-600 mb-3">Duration: 20 minutes • Interactive Content</p>
+                        <button onclick="playVideo('grammar')" class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-3 rounded-lg text-sm hover:from-green-700 hover:to-green-800 transition-all font-semibold">Watch Now</button>
+                    </div>
+                    <div class="glass-effect rounded-xl p-6 elite-shadow">
+                        <div class="bg-gradient-to-br from-purple-400 to-purple-600 h-40 rounded-lg mb-4 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <div class="text-4xl mb-2">▶️</div>
+                                <div class="text-sm">HD Quality</div>
+                            </div>
+                        </div>
+                        <h4 class="font-bold mb-2 text-gray-800">Writing Techniques</h4>
+                        <p class="text-sm text-gray-600 mb-3">Duration: 25 minutes • Advanced Tips</p>
+                        <button onclick="playVideo('writing')" class="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-3 rounded-lg text-sm hover:from-purple-700 hover:to-purple-800 transition-all font-semibold">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notes Tab -->
+            <div id="notes" class="content-section p-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Study Notes</h3>
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-200 rounded-xl p-6 elite-shadow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-bold text-yellow-800 text-lg">📋 Chapter 1 Comprehensive Notes</h4>
+                            <span class="bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">Premium</span>
+                        </div>
+                        <p class="text-yellow-700 mb-4">Detailed notes on literature introduction with key concepts, examples, and practice exercises.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="downloadNotes('chapter1')" class="bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-700 transition-colors font-semibold">Download PDF</button>
+                            <button onclick="viewNotes('chapter1')" class="border-2 border-yellow-600 text-yellow-600 px-4 py-2 rounded-lg hover:bg-yellow-600 hover:text-white transition-colors font-semibold">View Online</button>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 elite-shadow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-bold text-green-800 text-lg">📋 Grammar Quick Reference</h4>
+                            <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Essential</span>
+                        </div>
+                        <p class="text-green-700 mb-4">Quick reference guide for grammar rules, common mistakes, and memory techniques.</p>
+                        <div class="flex space-x-3">
+                            <button onclick="downloadNotes('grammar')" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-semibold">Download PDF</button>
+                            <button onclick="viewNotes('grammar')" class="border-2 border-green-600 text-green-600 px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white transition-colors font-semibold">View Online</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions Tab -->
+            <div id="questions" class="content-section p-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Interactive Assessments</h3>
+                <div class="space-y-8">
+                    <div class="glass-effect border border-gray-200 rounded-xl p-8 elite-shadow">
+                        <div class="flex items-center justify-between mb-6">
+                            <h4 class="font-bold text-xl text-gray-800">Literature Fundamentals Quiz</h4>
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">10 Questions</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">15 Minutes</span>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <p class="font-semibold mb-4 text-gray-800">1. What are the three main types of literature?</p>
+                                <div class="space-y-3">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="q1" value="a" class="mr-3 text-blue-600">
+                                        <span class="text-gray-700">Poetry, Prose, Drama</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="q1" value="b" class="mr-3 text-blue-600">
+                                        <span class="text-gray-700">Fiction, Non-fiction, Biography</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="q1" value="c" class="mr-3 text-blue-600">
+                                        <span class="text-gray-700">Books, Magazines, Newspapers</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <p class="font-semibold mb-4 text-gray-800">2. Which literary device uses comparison with 'like' or 'as'?</p>
+                                <div class="space-y-3">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="q2" value="a" class="mr-3 text-blue-600">
+                                        <span class="text-gray-700">Metaphor</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="q2" value="b" class="mr-3 text-blue-600">
+                                        <span class="text-gray-700">Simile</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="q2" value="c" class="mr-3 text-blue-600">
+                                        <span class="text-gray-700">Alliteration</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-8">
+                            <div class="text-sm text-gray-600">
+                                Progress: <span class="font-semibold">2 of 10 questions</span>
+                            </div>
+                            <button onclick="submitQuiz()" class="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-3 rounded-lg hover:from-green-700 hover:to-green-800 transition-all font-semibold">Submit Assessment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Section -->
+    <section id="library" class="main-section hidden">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold gradient-text mb-4">Digital Library</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Access our comprehensive collection of academic resources, research materials, and supplementary content.</p>
+        </div>
+
+        <!-- Library Categories -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div class="glass-effect rounded-xl p-6 text-center elite-shadow cursor-pointer" onclick="showLibraryCategory('textbooks')">
+                <div class="text-5xl mb-4">📚</div>
+                <h3 class="font-bold text-lg mb-2">Digital Textbooks</h3>
+                <p class="text-sm text-gray-600">Interactive textbooks for all subjects</p>
+            </div>
+            <div class="glass-effect rounded-xl p-6 text-center elite-shadow cursor-pointer" onclick="showLibraryCategory('research')">
+                <div class="text-5xl mb-4">🔍</div>
+                <h3 class="font-bold text-lg mb-2">Research Papers</h3>
+                <p class="text-sm text-gray-600">Academic research and journals</p>
+            </div>
+            <div class="glass-effect rounded-xl p-6 text-center elite-shadow cursor-pointer" onclick="showLibraryCategory('multimedia')">
+                <div class="text-5xl mb-4">🎬</div>
+                <h3 class="font-bold text-lg mb-2">Multimedia</h3>
+                <p class="text-sm text-gray-600">Videos, animations, and interactive content</p>
+            </div>
+            <div class="glass-effect rounded-xl p-6 text-center elite-shadow cursor-pointer" onclick="showLibraryCategory('references')">
+                <div class="text-5xl mb-4">📖</div>
+                <h3 class="font-bold text-lg mb-2">References</h3>
+                <p class="text-sm text-gray-600">Dictionaries, encyclopedias, and guides</p>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="glass-effect rounded-2xl p-8 mb-12 elite-shadow">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Upload Academic Materials</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-blue-500 transition-colors cursor-pointer" onclick="document.getElementById('file-upload').click()">
+                        <div class="text-4xl mb-4">📁</div>
+                        <p class="text-gray-600 mb-2">Drag and drop files here or click to browse</p>
+                        <p class="text-sm text-gray-500">Supports PDF, DOC, PPT, MP4, and more</p>
+                        <input type="file" id="file-upload" class="hidden" multiple onchange="handleFileUpload(event)">
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Title</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter material title">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Category</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>Select category</option>
+                                <option>Textbooks</option>
+                                <option>Research Papers</option>
+                                <option>Multimedia</option>
+                                <option>References</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Grade Level</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>Select grade</option>
+                                <option>Grade 7</option>
+                                <option>Grade 8</option>
+                                <option>Grade 9</option>
+                                <option>All Grades</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all font-semibold">Upload Material</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Uploads -->
+        <div class="glass-effect rounded-2xl p-8 elite-shadow">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Recently Added Materials</h3>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-blue-600 text-xl">📄</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Advanced Mathematics Guide</h4>
+                            <p class="text-sm text-gray-600">Grade 9 • Mathematics • PDF</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-sm text-gray-500">2 hours ago</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-semibold">Download</button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span class="text-green-600 text-xl">🎥</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Science Experiment Videos</h4>
+                            <p class="text-sm text-gray-600">Grade 8 • Integrated Science • MP4</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-sm text-gray-500">1 day ago</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-semibold">Watch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section id="progress" class="main-section hidden">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold gradient-text mb-4">Learning Progress</h2>
+            <p class="text-xl text-gray-600">Track your academic journey and achievements</p>
+        </div>
+
+        <!-- Overall Progress -->
+        <div class="glass-effect rounded-2xl p-8 mb-12 elite-shadow">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Overall Performance</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <svg class="w-32 h-32 transform -rotate-90" viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="65, 100"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-gray-800">65%</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-800">Course Completion</h4>
+                    <p class="text-gray-600">Grade 7 Overall</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <svg class="w-32 h-32 transform -rotate-90" viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="85, 100"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-gray-800">85%</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-800">Average Score</h4>
+                    <p class="text-gray-600">All Assessments</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <svg class="w-32 h-32 transform -rotate-90" viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="92, 100"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-gray-800">92%</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-800">Attendance Rate</h4>
+                    <p class="text-gray-600">Online Sessions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subject Progress -->
+        <div class="glass-effect rounded-2xl p-8 mb-12 elite-shadow">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Subject Performance</h3>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-blue-600 text-xl">📚</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">English</h4>
+                            <p class="text-sm text-gray-600">75% Complete</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-48 bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <span class="text-sm font-semibold text-gray-700 w-12">A-</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <span class="text-purple-600 text-xl">🔢</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Mathematics</h4>
+                            <p class="text-sm text-gray-600">80% Complete</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-48 bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-3 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <span class="text-sm font-semibold text-gray-700 w-12">A</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span class="text-green-600 text-xl">🔬</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Integrated Science</h4>
+                            <p class="text-sm text-gray-600">55% Complete</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-48 bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full" style="width: 55%"></div>
+                        </div>
+                        <span class="text-sm font-semibold text-gray-700 w-12">B+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="glass-effect rounded-2xl p-8 elite-shadow">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Achievements & Badges</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center achievement-badge">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-white text-2xl">🏆</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">Top Performer</h4>
+                    <p class="text-sm text-gray-600">Mathematics Excellence</p>
+                </div>
+                <div class="text-center achievement-badge">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-white text-2xl">📚</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">Bookworm</h4>
+                    <p class="text-sm text-gray-600">Read 50+ Materials</p>
+                </div>
+                <div class="text-center achievement-badge">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-white text-2xl">✅</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">Consistent</h4>
+                    <p class="text-sm text-gray-600">30-Day Streak</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-gray-400 text-2xl">🎯</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-400">Perfect Score</h4>
+                    <p class="text-sm text-gray-400">Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section id="announcements" class="main-section hidden">
+        <h2 class="text-4xl font-bold gradient-text mb-12 text-center">School News & Announcements</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <div class="glass-effect rounded-2xl p-8 border-l-4 border-blue-500 elite-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span class="text-blue-600 text-xl">📢</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Welcome to New Academic Year 2024</h3>
+                            <p class="text-sm text-gray-500">Posted 2 days ago by Administration</p>
+                        </div>
+                    </div>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Important</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed">We're excited to welcome all students to Alpha Academies' enhanced online learning platform. The new academic year brings exciting features including AI-powered learning assistance, interactive virtual labs, and personalized learning paths. Classes begin next Monday with orientation sessions for all grade levels.</p>
+            </div>
+            <div class="glass-effect rounded-2xl p-8 border-l-4 border-green-500 elite-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <span class="text-green-600 text-xl">🎥</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">New Premium Video Content Available</h3>
+                            <p class="text-sm text-gray-500">Posted 1 week ago by Content Team</p>
+                        </div>
+                    </div>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Update</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed">Fresh high-definition video lessons have been uploaded for all subjects across all grades. These include interactive elements, expert commentary, and real-world applications. Check your subject pages for the latest content updates and enhanced learning materials.</p>
+            </div>
+            <div class="glass-effect rounded-2xl p-8 border-l-4 border-purple-500 elite-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                            <span class="text-purple-600 text-xl">🏆</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Student Achievement Recognition</h3>
+                            <p class="text-sm text-gray-500">Posted 2 weeks ago by Academic Office</p>
+                        </div>
+                    </div>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Achievement</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed">Congratulations to our outstanding students who have achieved excellence in their recent assessments. The new achievement system now tracks and rewards consistent performance, participation, and academic growth. Keep up the excellent work!</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+    <div class="glass-effect rounded-2xl p-8 max-w-md w-full mx-4 elite-shadow">
+        <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold gradient-text mb-2">Welcome Back</h3>
+            <p class="text-gray-600">Sign in to continue your learning journey</p>
+        </div>
+        <form onsubmit="handleLogin(event)" class="space-y-4">
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Email or Username</label>
+                <input type="text" id="login-email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your email or username" required>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Password</label>
+                <input type="password" id="login-password" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your password" required>
+            </div>
+            <div class="flex items-center justify-between">
+                <label class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    <span class="text-sm text-gray-600">Remember me</span>
+                </label>
+                <a href="#" class="text-sm text-blue-600 hover:text-blue-700">Forgot password?</a>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all font-semibold">Sign In</button>
+        </form>
+        <div class="text-center mt-6">
+            <p class="text-gray-600">Don't have an account? <button onclick="showModal('register')" class="text-blue-600 hover:text-blue-700 font-semibold">Sign up</button></p>
+        </div>
+        <button onclick="hideModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div id="register-modal" class="modal">
+    <div class="glass-effect rounded-2xl p-8 max-w-md w-full mx-4 elite-shadow">
+        <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold gradient-text mb-2">Join Alpha Academies</h3>
+            <p class="text-gray-600">Create your account to start learning</p>
+        </div>
+        <form onsubmit="handleRegister(event)" class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+                    <input type="text" id="register-firstname" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="First name" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+                    <input type="text" id="register-lastname" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Last name" required>
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                <input type="email" id="register-email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Grade Level</label>
+                <select id="register-grade" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    <option value="">Select your grade</option>
+                    <option value="7">Grade 7</option>
+                    <option value="8">Grade 8</option>
+                    <option value="9">Grade 9</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Password</label>
+                <input type="password" id="register-password" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Create a password" required>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Confirm Password</label>
+                <input type="password" id="register-confirm" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Confirm your password" required>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="terms" class="mr-2" required>
+                <label for="terms" class="text-sm text-gray-600">I agree to the <a href="#" class="text-blue-600 hover:text-blue-700">Terms of Service</a> and <a href="#" class="text-blue-600 hover:text-blue-700">Privacy Policy</a></label>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-lg hover:from-green-700 hover:to-green-800 transition-all font-semibold">Create Account</button>
+        </form>
+        <div class="text-center mt-6">
+            <p class="text-gray-600">Already have an account? <button onclick="showModal('login')" class="text-blue-600 hover:text-blue-700 font-semibold">Sign in</button></p>
+        </div>
+        <button onclick="hideModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-12 mt-20">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">AA</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Alpha Academies</h3>
+                </div>
+                <p class="text-gray-400 leading-relaxed">Transforming education through innovative technology and personalized learning experiences.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Curriculum</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Support</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Learning</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition-colors">Grade 7</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Grade 8</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Grade 9</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Library</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact Info</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>📧 info@alphaacademies.edu</li>
+                    <li>📞 +254 700 123 456</li>
+                    <li>🕒 24/7 Online Support</li>
+                    <li>🌍 Global Access</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8 text-center">
+            <p class="text-gray-400">© 2024 Alpha Academies. All rights reserved. | Excellence • Innovation • Achievement</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let currentGrade = 7;
+    let currentSubject = '';
+    let isLoggedIn = false;
+    let currentUser = null;
+
+    // Navigation Functions
+    function showSection(sectionName) {
+        const sections = document.querySelectorAll('.main-section');
+        sections.forEach(section => section.classList.add('hidden'));
+        document.getElementById(sectionName).classList.remove('hidden');
+        
+        const navButtons = document.querySelectorAll('.nav-btn');
+        navButtons.forEach(btn => btn.classList.remove('text-blue-600', 'font-bold'));
+        event.target.classList.add('text-blue-600', 'font-bold');
+    }
+
+    function showGrade(grade) {
+        currentGrade = grade;
+        document.getElementById('grade-title').textContent = `Grade ${grade} Classroom`;
+        
+        const sections = document.querySelectorAll('.main-section');
+        sections.forEach(section => section.classList.add('hidden'));
+        document.getElementById('classroom').classList.remove('hidden');
+    }
+
+    function showCurrentGrade() {
+        showGrade(currentGrade);
+    }
+
+    function showSubject(subject) {
+        currentSubject = subject;
+        document.getElementById('subject-title').textContent = `${subject} - Grade ${currentGrade}`;
+        
+        const sections = document.querySelectorAll('.main-section');
+        sections.forEach(section => section.classList.add('hidden'));
+        document.getElementById('subject-content').classList.remove('hidden');
+        
+        showContentTab('contents');
+    }
+
+    function showContentTab(tabName) {
+        const contentSections = document.querySelectorAll('.content-section');
+        contentSections.forEach(section => {
+            section.classList.remove('active');
+            section.style.display = 'none';
+        });
+        
+        const selectedSection = document.getElementById(tabName);
+        selectedSection.classList.add('active');
+        selectedSection.style.display = 'block';
+        
+        const tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(btn => {
+            btn.classList.remove('active', 'border-blue-500', 'text-blue-600');
+            btn.classList.add('border-transparent', 'text-gray-700');
+        });
+        
+        event.target.classList.add('active', 'border-blue-500', 'text-blue-600');
+        event.target.classList.remove('border-transparent', 'text-gray-700');
+    }
+
+    // Modal Functions
+    function showModal(modalType) {
+        hideModal(); // Hide any open modal first
+        const modal = document.getElementById(modalType + '-modal');
+        modal.classList.add('active');
+    }
+
+    function hideModal() {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => modal.classList.remove('active'));
+    }
+
+    // Authentication Functions
+    function handleLogin(event) {
+        event.preventDefault();
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+        
+        // Simulate login process
+        if (email && password) {
+            isLoggedIn = true;
+            currentUser = {
+                name: email.split('@')[0] || 'Student',
+                email: email,
+                grade: 7,
+                avatar: email.charAt(0).toUpperCase()
+            };
+            
+            updateUserInterface();
+            hideModal();
+            showNotification('Welcome back! Login successful.', 'success');
+        }
+    }
+
+    function handleRegister(event) {
+        event.preventDefault();
+        const firstName = document.getElementById('register-firstname').value;
+        const lastName = document.getElementById('register-lastname').value;
+        const email = document.getElementById('register-email').value;
+        const grade = document.getElementById('register-grade').value;
+        const password = document.getElementById('register-password').value;
+        const confirmPassword = document.getElementById('register-confirm').value;
+        
+        if (password !== confirmPassword) {
+            showNotification('Passwords do not match!', 'error');
+            return;
+        }
+        
+        // Simulate registration process
+        if (firstName && lastName && email && grade && password) {
+            isLoggedIn = true;
+            currentUser = {
+                name: firstName + ' ' + lastName,
+                email: email,
+                grade: parseInt(grade),
+                avatar: firstName.charAt(0).toUpperCase()
+            };
+            
+            updateUserInterface();
+            hideModal();
+            showNotification('Account created successfully! Welcome to Alpha Academies.', 'success');
+        }
+    }
+
+    function logout() {
+        isLoggedIn = false;
+        currentUser = null;
+        updateUserInterface();
+        showNotification('You have been logged out successfully.', 'info');
+    }
+
+    function updateUserInterface() {
+        const authButtons = document.getElementById('auth-buttons');
+        const userMenu = document.getElementById('user-menu');
+        
+        if (isLoggedIn && currentUser) {
+            authButtons.classList.add('hidden');
+            userMenu.classList.remove('hidden');
+            
+            document.getElementById('user-avatar').textContent = currentUser.avatar;
+            document.getElementById('user-name').textContent = currentUser.name;
+            document.getElementById('user-grade').textContent = `Grade ${currentUser.grade}`;
+            
+            currentGrade = currentUser.grade;
+        } else {
+            authButtons.classList.remove('hidden');
+            userMenu.classList.add('hidden');
+        }
+    }
+
+    // Library Functions
+    function showLibraryCategory(category) {
+        showNotification(`Loading ${category} materials...`, 'info');
+    }
+
+    function handleFileUpload(event) {
+        const files = event.target.files;
+        if (files.length > 0) {
+            showNotification(`${files.length} file(s) selected for upload.`, 'success');
+        }
+    }
+
+    // Content Functions
+    function playVideo(videoType) {
+        showNotification(`Loading ${videoType} video lesson...`, 'info');
+    }
+
+    function downloadNotes(noteType) {
+        showNotification(`Downloading ${noteType} notes...`, 'success');
+    }
+
+    function viewNotes(noteType) {
+        showNotification(`Opening ${noteType} notes...`, 'info');
+    }
+
+    function submitQuiz() {
+        showNotification('Quiz submitted successfully! Results will be available shortly.', 'success');
+    }
+
+    // Notification System
+    function showNotification(message, type = 'info') {
+        const notification = document.createElement('div');
+        notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg max-w-sm transition-all duration-300 transform translate-x-full`;
+        
+        const colors = {
+            success: 'bg-green-500 text-white',
+            error: 'bg-red-500 text-white',
+            info: 'bg-blue-500 text-white',
+            warning: 'bg-yellow-500 text-black'
+        };
+        
+        notification.className += ` ${colors[type]}`;
+        notification.innerHTML = `
+            <div class="flex items-center justify-between">
+                <span>${message}</span>
+                <button onclick="this.parentElement.parentElement.remove()" class="ml-4 text-lg">&times;</button>
+            </div>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => {
+            notification.classList.remove('translate-x-full');
+        }, 100);
+        
+        // Auto remove after 5 seconds
+        setTimeout(() => {
+            notification.classList.add('translate-x-full');
+            setTimeout(() => notification.remove(), 300);
+        }, 5000);
+    }
+
+    // Initialize the application
+    document.addEventListener('DOMContentLoaded', function() {
+        showSection('home');
+        
+        // Close modals when clicking outside
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                hideModal();
+            }
+        });
+        
+        // Handle escape key for modals
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                hideModal();
+            }
+        });
+    });
+</script>
